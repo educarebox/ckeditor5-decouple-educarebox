@@ -33,8 +33,9 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+import Mention from '@ckeditor/ckeditor5-mention/src/mention';
 
-export default class DecoupledEditor extends DecoupledEditorBase {}
+export default class DecoupledEditor extends DecoupledEditorBase { }
 
 // Plugins to include in the build.
 DecoupledEditor.builtinPlugins = [
@@ -64,7 +65,8 @@ DecoupledEditor.builtinPlugins = [
 	Paragraph,
 	PasteFromOffice,
 	Table,
-	TableToolbar
+	TableToolbar,
+	Mention
 ];
 
 // Editor configuration.
@@ -82,19 +84,29 @@ DecoupledEditor.defaultConfig = {
 			'strikethrough',
 			'highlight',
 			'|',
-			'alignment',
+			'alignment:left',
+			'alignment:center',
+			'alignment:right',
+			'alignment:justify',
 			'|',
 			'numberedList',
 			'bulletedList',
 			'|',
 			'link',
 			'blockquote',
-			'imageUpload',
 			'insertTable',
-			'mediaEmbed',
 			'|',
 			'undo',
 			'redo'
+		]
+	},
+	mention: {
+		feeds: [
+			{
+				marker: '@',
+				feed: ['@Crie', '@Sua', '@Lista'],
+				minimumCharacters: 1
+			}
 		]
 	},
 	image: {
@@ -119,5 +131,5 @@ DecoupledEditor.defaultConfig = {
 		]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
-	language: 'en'
+	language: 'pt-br'
 };

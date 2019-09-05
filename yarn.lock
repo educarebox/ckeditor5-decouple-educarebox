@@ -255,6 +255,16 @@
     "@ckeditor/ckeditor5-utils" "^14.0.0"
     "@ckeditor/ckeditor5-widget" "^11.1.0"
 
+"@ckeditor/ckeditor5-mention@13.0.0":
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-mention/-/ckeditor5-mention-13.0.0.tgz#0c10a13842c7737d25874766b155fe17b0ac1501"
+  integrity sha512-z+iEMuqC4+3XpJmTdd7k5KD7n6D3vSkEfTjjdC4WbrYwKW2eq+laAB4N6xRuIXi+EpQn82jqnJDetF6YjNkz+Q==
+  dependencies:
+    "@ckeditor/ckeditor5-core" "^12.3.0"
+    "@ckeditor/ckeditor5-typing" "^12.2.0"
+    "@ckeditor/ckeditor5-ui" "^14.0.0"
+    "@ckeditor/ckeditor5-utils" "^14.0.0"
+
 "@ckeditor/ckeditor5-paragraph@^11.0.5":
   version "11.0.5"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-paragraph/-/ckeditor5-paragraph-11.0.5.tgz#15dd09a5b207138ec1579313daf3be5daa08d502"
